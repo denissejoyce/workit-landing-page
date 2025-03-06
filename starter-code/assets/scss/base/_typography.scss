@@ -1,0 +1,75 @@
+@use "../util/" as *;
+
+@font-face {
+  font-family: "FrauncesSemiBold";
+  src: url("/starter-code/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("/starter-code/assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/starter-code/assets/fonts/manrope/static/Manrope-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: $purple900;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+}
+
+.banner,
+.header a,
+.card {
+  color: $white;
+}
+
+.banner span,
+.header a {
+  line-height: 180%;
+  text-decoration: solid underline $green 3px;
+  text-underline-offset: 8px;
+}
+
+.banner {
+  font-size: 18px;
+  .heading {
+    font-size: 48px;
+    line-height: 0.35;
+  }
+}
+
+.header a {
+  font-size: 18px;
+}
+
+.heading,
+.num {
+  font-family: "FrauncesSemiBold", serif;
+  font-feature-settings: "liga" off, "clig" off;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.btn {
+  text-decoration: none;
+  color: $purple900;
+}
+
+.btn--cta {
+  font-feature-settings: "liga" off, "clig" off;
+  font-weight: 700;
+  font-size: 16px;
+}

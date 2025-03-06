@@ -1,0 +1,32 @@
+@use "../util/" as *;
+
+.banner {
+  background-color: $purple900;
+  .heading {
+    margin-bottom: 60.5px; //+20.5px
+  }
+  // - 10.5
+}
+
+// class content contains only the 3 points, change this later
+.content {
+  background-color: $purple100;
+  .num {
+    height: 48px;
+    width: 48px;
+    border: 1px solid $purple500;
+    border-radius: 50%;
+    @include toFlex();
+    justify-content: center;
+  }
+  .points {
+    @include toFlex();
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.card {
+  background-color: $purple900;
+  padding: 32px;
+}

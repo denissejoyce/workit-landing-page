@@ -1,0 +1,10 @@
+@use "../util/" as *;
+
+.btn--cta {
+  background-color: $green;
+  padding: 12px 32px;
+}
+
+.banner .btn--cta {
+  margin: 40px;
+}

@@ -1,0 +1,12 @@
+@use "../util/" as *;
+
+.header {
+  background-color: $purple900;
+  @include toFlex(row);
+  justify-content: space-between;
+
+  .logo {
+    width: 95.762px;
+    height: 24.608px;
+  }
+}
