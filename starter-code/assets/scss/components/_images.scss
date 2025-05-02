@@ -1,0 +1,19 @@
+@use "../util/" as *;
+
+.phone {
+  height: 184px;
+  margin: auto;
+  position: relative;
+  top: -50px;
+  display: inline;
+  margin-top: -50px;
+  z-index: 1;
+}
+
+.profile {
+  width: 280px;
+  margin: auto;
+  position: relative;
+  bottom: -50px;
+  z-index: -1;
+}

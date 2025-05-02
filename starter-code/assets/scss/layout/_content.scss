@@ -11,6 +11,7 @@
 // class content contains only the 3 points, change this later
 .content {
   background-color: $purple100;
+  padding-bottom: 64px;
   .num {
     height: 48px;
     width: 48px;
@@ -19,14 +20,72 @@
     @include toFlex();
     justify-content: center;
   }
-  .points {
+  section {
+    .points {
+      @include toFlex();
+      align-items: center;
+      gap: 24px;
+      padding: 0 20px;
+
+      div {
+        .heading {
+          margin-bottom: 16px;
+        }
+      }
+    }
+
     @include toFlex();
-    align-items: center;
-    gap: 24px;
+    gap: 32px;
   }
 }
 
 .card {
   background-color: $purple900;
   padding: 32px;
+
+  @include toFlex();
+  gap: 32px;
+  align-items: center;
+}
+
+.curve-1,
+.curve-2 {
+  position: relative;
+  overflow: hidden;
+
+  z-index: -1;
+}
+
+.curve-1 {
+  background-color: $purple100;
+  height: 145px;
+}
+
+.curve-2 {
+  background-color: $white;
+  height: 24px;
+}
+
+.curve-1::before,
+.curve-2::before {
+  border-radius: 100%;
+  position: absolute;
+
+  right: -200px;
+  left: -200px;
+  top: -200px;
+  content: "";
+  bottom: 0;
+}
+
+.curve-1::before {
+  background: $purple900;
+}
+
+.curve-2::before {
+  background: $purple100;
+}
+
+.cta {
+  margin: 112px 20px 0;
 }
